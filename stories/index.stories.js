@@ -16,3 +16,4 @@ storiesOf("Button", module)
             </span>
         </Button>
     ));
+1;

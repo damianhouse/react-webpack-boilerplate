@@ -7,7 +7,7 @@ import Button from "./components/Button/Button";
 const Index = () => {
     return (
         <Div className={styles.wrapper}>
-            Hello world!
+            <Div>Hello world!</Div>
             <Button>Here is my button!</Button>
         </Div>
     );
