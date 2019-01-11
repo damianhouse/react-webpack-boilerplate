@@ -5,14 +5,13 @@ const htmlPlugin = new HtmlWebPackPlugin({
     filename: "./index.html"
 });
 module.exports = {
+    entry: './src/index.js',
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader"
-                }
+                use: ['babel-loader']
             },
             {
                 test: /\.css$/,
